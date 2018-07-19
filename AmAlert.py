@@ -60,9 +60,9 @@ def main():
     for elem in (prod_dict.keys()):
         data = prod_dict[elem]
         if (data["alert_price"]):
-            products.append(AmazonLookup(elem, data["checkprime"], data["alert_price"], bool(data["single_alert"])))
+            products.append(AmazonLookup(elem, data["check_prime"], data["alert_price"], bool(data["single_alert"])))
         else:
-            products.append(AmazonLookup(elem, data["checkprime"], None, bool(data["single_alert"])))
+            products.append(AmazonLookup(elem, data["check_prime"], None, bool(data["single_alert"])))
     with open("output.txt","w") as ofile:
         while True:
             updatedata()
