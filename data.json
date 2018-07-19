@@ -1,7 +1,7 @@
 {
     "B07D7PH5GP":{
       "check_prime":true,
-      "alert_price":6,
+      "alert_price":60000,
       "single_alert":false
     }
 }
