@@ -28,19 +28,18 @@ status-channel : The channel where the state of the program will be updated hour
 fail_delay : The time for pausing in between sending the requests (low value might lead to ip ban).
 workers : Determines the  number of parallel requests to send at once.
 ```
-you can get the slack token for your workspace from here : https://goo.gl/duqpz5.
-
-
+You can get the slack token for your workspace from here : https://goo.gl/duqpz5.  
+Set the price field as a empty string if you want in stock notification.  
 The details for products are also held in json format in the `data.json` file. The fields are as follows
 ```
 check_prime : Whether to check for prime seller or not {true/false}.
 alert_price : the threshold price to send alert.
 single_alert : Whether to send a single alert or multiple alerts when the condition is met.
 ```
-The key represents the asin of the product which can be found in the product info on the amazon page. A sample product has been added to the file.
+The key represents the asin of the product which can be found in the product info on the amazon page.  
+A sample product has been added to the file.
 
 ## TODO
-
 ```
 Add proxy support
 Add dynamic updation and changes in the data files via slack.
