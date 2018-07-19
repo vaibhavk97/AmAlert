@@ -37,7 +37,7 @@ alert_price : the threshold price to send alert.
 single_alert : Whether to send a single alert or multiple alerts when the condition is met.
 ```
 The key represents the asin of the product which can be found in the product info on the amazon page.  
-A sample product has been added to the file , you can add more separeted by commas in the same format.
+A sample product has been added to the file , you can add more separated by commas in the same format.
 
 ## TODO
 ```
