@@ -26,13 +26,14 @@ main-channel : The channel on your workspace where you will receive the main ale
 error-channel : The channel where errors will be reported if found.
 status-channel : The channel where the state of the program will be updated hourly.
 fail_delay : The time for pausing in between sending the requests (low value might lead to ip ban).
+workers : Determines the  number of parallel requests to send at once.
 ```
 you can get the slack token for your workspace from here : https://goo.gl/duqpz5.
 
 
 The details for products are also held in json format in the `data.json` file. The fields are as follows
 ```
-checkprime : Whether to check for prime seller or not {true/false}.
+check_prime : Whether to check for prime seller or not {true/false}.
 alert_price : the threshold price to send alert.
 single_alert : Whether to send a single alert or multiple alerts when the condition is met.
 ```
