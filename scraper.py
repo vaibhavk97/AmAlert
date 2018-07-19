@@ -1,11 +1,8 @@
 from bs4 import BeautifulSoup
 from slackclient import SlackClient
 from random import randint
-import logging
 from operator import itemgetter
 from datetime import datetime
-
-logging.basicConfig(filename = 'app.log',filemode='w', level = logging.INFO)
 
 import json
 with open("config.json") as ifile:
@@ -52,7 +49,6 @@ class AmazonLookup():
                         text = str(self.count)+" "+str(self.msgcount)+" "+'[' + str(self.metadata[0][0]) + '] '+'[ PRIME ] ' + '[' + "".join(self.metadata[0][1]) + '] ' + " ".join(self.title.split(" ")[:4])
                     else:
                         text = str(self.count)+" "+str(self.msgcount)+" "+'[' + str(self.metadata[0][0]) + '] ' + '[' + "".join(self.metadata[0][1]) + '] ' + " ".join(self.title.split(" ")[:4])
-                logging.info(text+"\n")
                 return text
             return str(self.count)+" "+str(self.msgcount)+" "+'[ NOT IN STOCK ] ' + " ".join(self.title.split(" ")[:4])
         except Exception as e:
