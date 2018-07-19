@@ -1,0 +1,4 @@
+requests_futures
+bs4
+slackclient
+html5lib

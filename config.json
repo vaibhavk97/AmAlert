@@ -1,0 +1,8 @@
+{
+  "slack-token": "your slack token here",
+  "main-channel": "main channel name here",
+  "error-channel": "error channel name here",
+  "status-channel": "status channel name here",
+  "fail-delay":30,
+  "workers":10
+}
