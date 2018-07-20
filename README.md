@@ -37,8 +37,17 @@ alert_price : the threshold price to send alert.
 single_alert : Whether to send a single alert or multiple alerts when the condition is met.
 ```
 The key represents the asin of the product which can be found in the product info on the amazon page.  
-A sample product has been added to the file , you can add more separated by commas in the same format.
-
+Sample products have been added to the file , you can add more separated by commas in the same format.
+## OUTPUT
+The program saves the current progress in the output.txt file . The fields are as follows:
+```
+column 1 : Number of requests sent for the product
+column 2 : Number of alert messages sent on slack for the product.
+column 3 : Current lowest price of the product (excludes shipping).
+column 4 : Whether the seller is prime or not.
+column 5 : seller name
+column 6 : product name
+```
 ## TODO
 ```
 Add proxy support
