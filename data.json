@@ -3,5 +3,10 @@
       "check_prime":true,
       "alert_price":60000,
       "single_alert":false
+    },
+    "B06XG7QS4Z":{
+      "check_prime":false,
+      "alert_price":600,
+      "single_alert":false
     }
 }
