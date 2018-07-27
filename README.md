@@ -24,7 +24,7 @@ Configuration is held in json format in the file `config.json` .
 slack-token : the token for your slack workspace.
 main-channel : The channel on your workspace where you will receive the main alerts.
 error-channel : The channel where errors will be reported if found.
-status-channel : The channel where the state of the program will be updated hourly.
+status-channel : The channel where the state of the program will be updated hourly the format is similiar to the output file.
 fail_delay : The time for pausing in between sending the requests (low value might lead to ip ban).
 workers : Determines the  number of parallel requests to send at once.
 ```

@@ -106,6 +106,7 @@ class AmazonLookup():
                     self.flag = 0
                     return False
             else:
+                self.flag = 0
                 return False
 
     def getInfo(self,response):
@@ -127,4 +128,4 @@ class AmazonLookup():
                     self.count += 1
                     done = False
         except Exception as e:
-            self.sendAlert(status=False,error=e)
+            self.sendAlert(status=False,error="amazon has possibly blocked this request. Restart the process if this post message persists")
