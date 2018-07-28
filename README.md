@@ -36,7 +36,7 @@ check_prime : Whether to check for prime seller or not {true/false}.
 alert_price : the threshold price to send alert.
 single_alert : Whether to send a single alert or multiple alerts when the condition is met.
 ```
-The key represents the asin of the product which can be found in the product info on the amazon page.  
+The key represents the ASIN(Amazon Standard Identication Number) of the product which can be found in the product info on the amazon page.  
 Sample products have been added to the file , you can add more separated by commas in the same format.
 ## OUTPUT
 The program saves the current progress in the output.txt file . The fields are as follows:
